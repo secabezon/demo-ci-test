@@ -6,7 +6,7 @@ on:
     
 jobs:
   test:
-    turns-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: checkoutcode
