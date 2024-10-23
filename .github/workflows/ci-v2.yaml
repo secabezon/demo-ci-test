@@ -23,6 +23,7 @@ jobs:
           source venv/bin/activate
           pip install -r requeriments.txt
 
+
       - name: Run Static code analysis with flake 8
         run:
           source venv/bin/activate
