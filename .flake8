@@ -1,0 +1,7 @@
+[flake8]
+max-line-length = 88
+#Maximo por linea 88 caracteres
+ignore = E,W
+#cada dos lineas haya un blanco
+select = E302, W293
+#dos reglas de codigo estatico
