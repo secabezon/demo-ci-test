@@ -23,19 +23,8 @@ jobs:
           source venv/bin/activate
           pip install -r requeriments.txt
 
-
-      - name: Run Static code analysis with flake 8
+      - name: Run custom linter
         run:
           source venv/bin/activate
-          flake8 my_app/main_v1_2.py
+          python custom_linter.py my_app
 
-      - name: Run Static code analysis with mypy
-        run:
-          source venv/bin/activate
-          mypy my_app --config-file mypy.ini
-
-
-      - name: RunTest
-        run: |
-          source venv/bin/activate
-          python -m unittest tests/test_main_v1.py

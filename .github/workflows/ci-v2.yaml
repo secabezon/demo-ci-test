@@ -18,19 +18,18 @@ jobs:
           python-version: '3.8'
 
       - name: Install dependencies
-        run:
+        run: |
           python -m venv venv
           source venv/bin/activate
           pip install -r requirements.txt
 
-
       - name: Run Static code analysis with flake 8
-        run:
+        run: |
           source venv/bin/activate
           flake8 my_app/main_v1_2.py
 
       - name: Run Static code analysis with mypy
-        run:
+        run: |
           source venv/bin/activate
           mypy my_app --config-file mypy.ini
 
