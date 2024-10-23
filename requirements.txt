@@ -2,3 +2,8 @@
 
 flake8
 mypy
+
+radon
+pytest
+nbconvert
+nbformat
